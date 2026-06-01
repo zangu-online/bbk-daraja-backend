@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SMM Panel Kenya - Cheapest Prices-Perfect for Resellers! Instagram,Facebook,Tiktok,Telegram,Youtube</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f4f7fb;
+    font-family:Arial,sans-serif;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    background:#111827;
+    min-height:100vh;
+    color:white;
+    padding:20px;
+}
+
+.sidebar h3{
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    display:block;
+    color:#d1d5db;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#2563eb;
+    color:white;
+}
+
+/* TOPBAR */
+
+.topbar{
+    background:white;
+    border-radius:12px;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+/* CARDS */
+
+.card-box{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom:20px;
+}
+
+.stat-card{
+    color:white;
+    border-radius:15px;
+    padding:20px;
+}
+
+.bg1{background:#2563eb;}
+.bg2{background:#16a34a;}
+.bg3{background:#dc2626;}
+.bg4{background:#9333ea;}
+
+/* SERVICE INFO */
+
+.service-info{
+    background:#f9fafb;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:15px;
+}
+
+.btn-custom{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px;
+    width:100%;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.btn-custom:hover{
+    background:#1d4ed8;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .sidebar{
+        min-height:auto;
+    }
+
+    .topbar{
+        flex-direction:column;
+        gap:10px;
+    }
+
+}
+
+
+.service-card{
+    background:#111827;
+    color:white;
+    padding:18px;
+    border-radius:14px;
+    margin-top:10px;
+    line-height:1.8;
+}
+
+.form-control,
+.form-select{
+    min-height:48px;
+    border-radius:12px;
+}
+
+.btn-custom{
+    transition:0.3s;
+}
+
+.btn-custom:hover{
+    transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+    .sidebar{
+        text-align:center;
+        padding:15px;
+    }
+
+    .sidebar h3{
+        font-size:24px;
+    }
+
+    .topbar h4{
+        font-size:20px;
+    }
+
+    .card-box{
+        padding:15px;
+    }
+
+    table{
+        font-size:13px;
+    }
+
+}
+
+
+/* MOBILE MENU */
+.menu-toggle{
+    display:none;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 14px;
+    border-radius:10px;
+    font-size:22px;
+}
+
+@media(max-width:768px){
+
+    .sidebar{
+        position:fixed;
+        top:0;
+        right:-260px;
+        width:250px;
+        height:100vh;
+        z-index:9999;
+        transition:0.3s;
+        overflow-y:auto;
+    }
+
+    .sidebar.active{
+        right:0;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .topbar{
+        flex-direction:row;
+    }
+
+    .stat-card{
+        padding:12px;
+    }
+
+    .stat-card h5{
+        font-size:12px;
+        margin-bottom:5px;
+    }
+
+    .stat-card h2{
+        font-size:16px;
+        margin:0;
+    }
+
+}
+
+
+/* FULLSCREEN MOBILE MENU */
+@media(max-width:768px){
+
+    .sidebar{
+        width:100%;
+        right:-100%;
+        padding-top:40px;
+    }
+
+    .sidebar.active{
+        right:0;
+    }
+
+    .sidebar a{
+        font-size:18px;
+        padding:16px;
+        text-align:center;
+    }
+
+}
+
+/* BOTTOM NAVIGATION */
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#111827;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:8px 0;
+    z-index:999;
+    border-top:1px solid #222;
+}
+
+.bottom-nav a{
+    color:white;
+    text-decoration:none;
+    font-size:11px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+}
+
+.bottom-nav i{
+    font-size:16px;
+}
+
+@media(min-width:769px){
+    .bottom-nav{
+        display:none;
+    }
+}
+
+
+/* APP ICON SCROLLER */
+
+.apps-scroll{
+    display:flex;
+    gap:12px;
+    overflow-x:auto;
+    padding:12px 5px;
+    margin-bottom:20px;
+    scrollbar-width:none;
+}
+
+.apps-scroll::-webkit-scrollbar{
+    display:none;
+}
+
+.app-icon{
+    min-width:70px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.app-icon img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #eee;
+    padding:4px;
+    background:white;
+}
+
+.app-icon small{
+    display:block;
+    font-size:11px;
+    margin-top:4px;
+    color:#111827;
+    font-weight:bold;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container-fluid">
+
+<div class="row">
+
+<!-- SIDEBAR -->
+
+<div class="col-lg-2 sidebar" id="sidebarMenu">
+
+<h3>BBK PANEL</h3>
+
+
+<a href="dashboard.html">Dashboard</a>
+<a href="dashboard.html">New Order</a>
+<a href="addfunds.html">Add Funds</a>
+<a href="termsofservices.html">Terms Of Services</a>
+<a href="myorders.html">My Orders</a>
+<a href="https://youtube.com/@boostyabankkenya/">How To Use BBK</a>
+<a href="affiliates.html">Affiliates</a>
+<a href="dashboard.html">API</a>
+<a href="https://instagram.com/@boostya_smm_panel/">Follow Us on Instagram</a>
+<a href="dashboard.html">Support</a>
+<a href="childpanel.html">Child Panel</a>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="col-lg-10 p-4">
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+<div>
+<h4>Welcome Back</h4>
+<small>User Dashboard</small>
+</div>
+
+<div class="d-flex align-items-center gap-2">
+<button class="btn btn-success" id="balanceBtn">
+Balance: KSh 0
+</button>
+
+<button class="menu-toggle" onclick="toggleMenu()">
+☰
+</button>
+</div>
+
+</div>
+
+<!-- STATS -->
+
+<div class="row">
+
+
+
+
+</div>
+
+<div class="row mt-3">
+
+<div class="col-md-4">
+<div class="stat-card bg2">
+<h5>Total Deposited</h5>
+<h2 id="totalDeposited">KSh 0</h2>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="stat-card bg3">
+<h5>Total Used</h5>
+<h2 id="totalUsed">KSh 0</h2>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="stat-card bg4">
+<h5>Remaining Balance</h5>
+<h2 id="remainingBalance">KSh 0</h2>
+</div>
+</div>
+
+</div>
+
+
+<div class="card-box mt-4">
+
+<h4 class="mb-4">BBK Social Boost Deposits</h4>
+
+<div class="service-card mb-4">
+<h5><i class="fa-solid fa-wallet"></i> Deposit via M-Pesa Till</h5>
+<p><b>Till Number:</b> 9260148</p>
+<p>
+<br>
+<b>Minimum Deposit:</b> KSh 25
+<br>
+Send money to the BBK Till Number then submit your transaction details below.
+</p>
+</div>
+
+<div class="row g-3">
+
+<div class="col-md-4">
+<input
+id="depositAmount"
+type="number"
+class="form-control"
+placeholder="Enter Amount"
+>
+</div>
+
+<div class="col-md-4">
+<button class="btn btn-success w-100" onclick="submitDeposit()">
+Submit Deposit
+</button>
+</div>
+
+</div>
+
+<div class="mt-4">
+
+<h6>Deposit Status</h6>
+
+<div id="depositStatus" class="alert alert-warning mt-2">
+No pending deposits
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- APP ICONS -->
+
+<div class="card-box mt-4">
+
+<h5 class="mb-3">Quick Apps</h5>
+
+<div class="apps-scroll">
+
+<div class="app-icon" onclick="selectCategory('facebook')">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+<small>Facebook</small>
+</div>
+
+<div class="app-icon" onclick="selectCategory('instagram')">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+<small>Instagram</small>
+</div>
+
+<div class="app-icon" onclick="selectCategory('tiktok')">
+<img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+<small>TikTok</small>
+</div>
+
+<div class="app-icon" onclick="selectCategory('youtube')">
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+<small>YouTube</small>
+</div>
+
+<div class="app-icon" onclick="selectCategory('twitter')">
+<img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png">
+<small>X</small>
+</div>
+
+<div class="app-icon" onclick="selectCategory('telegram')">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+<small>Telegram</small>
+</div>
+
+<div class="app-icon" onclick="selectCategory('whatsapp')">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+<small>WhatsApp</small>
+</div>
+
+<div class="app-icon" onclick="selectCategory('linkedin')">
+<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+<small>LinkedIn</small>
+</div>
+
+<div class="app-icon" onclick="selectCategory('discord')">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png">
+<small>Discord</small>
+</div>
+
+<div class="app-icon" onclick="selectCategory('soundcloud')">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968781.png">
+<small>SoundCloud</small>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- NEW ORDER -->
+
+
+<div class="card-box mt-4">
+
+<h4 class="mb-4">Place New Order</h4>
+
+<!-- CATEGORY -->
+
+<div class="mb-3">
+
+<label>Category</label>
+
+<select class="form-select" id="category">
+
+<option value="">Select Category</option>
+
+<option value="facebook">Facebook</option>
+<option value="instagram">Instagram</option>
+<option value="tiktok">TikTok</option>
+<option value="youtube">YouTube</option>
+<option value="twitter">Twitter/X</option>
+
+<option value="telegram">Telegram</option>
+<option value="whatsapp">WhatsApp</option>
+<option value="linkedin">LinkedIn</option>
+<option value="discord">Discord</option>
+<option value="soundcloud">SoundCloud</option>
+<option value="threads">Threads</option>
+<option value="website">Website Promo</option>
+
+
+</select>
+
+</div>
+
+<!-- SERVICE -->
+
+<div class="mb-3">
+
+<label>Service</label>
+
+<select class="form-select" id="service">
+
+<option>Select Service</option>
+
+</select>
+
+</div>
+
+<!-- DESCRIPTION -->
+
+<div class="service-info service-card mb-3" id="description">
+
+Service description will appear here
+
+</div>
+
+<!-- LINK -->
+
+<div class="mb-3">
+
+<label>Link</label>
+
+<input
+type="text"
+class="form-control"
+id="orderLink"
+placeholder="Paste social media link"
+>
+</div>
+
+<!-- QUANTITY -->
+
+<div class="mb-3">
+
+<label>Quantity</label>
+
+<input
+type="number"
+class="form-control"
+id="quantity"
+value="1000"								
+>
+
+</div>
+
+<!-- CHARGE -->
+
+<div class="mb-3">
+
+<label>Charge</label>
+
+<input
+type="text"
+class="form-control"
+id="charge"
+readonly
+>
+
+</div>
+
+<button class="btn-custom" onclick="submitOrder()">
+Submit Order
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+
+// ====================================
+// SERVICES DATABASE
+// ====================================
+const services = {
+
+facebook: [
+
+{
+name: "FB Post Likes👍",
+price: 85,
+min: 100,
+max: 100000,
+speed: "10K/day",
+description: "High Quality Facebook Likes"
+},
+
+{
+name: "FB Love Reactions❤️",
+price: 82,
+min: 100,
+max: 500000,
+speed: "15K/day",
+description: "Real Facebook Love Reactions"
+},
+
+{
+name: "Facebook Reel Views",
+price: 45,
+min: 1000,
+max: 1000000,
+speed: "Instant",
+description: "Fast Facebook Reel Views"
+},
+
+{
+name: "Facebook Video Views",
+price: 40,
+min: 1000,
+max: 5000000,
+speed: "Instant",
+description: "High Retention Facebook Views"
+},
+
+{
+name: "Facebook Reel Shares",
+price: 26,
+min: 100,
+max: 500000,
+speed: "5K/day",
+description: "Fast Facebook Reel Shares"
+},
+
+{
+name: "Facebook Post Shares",
+price: 25,
+min: 100,
+max: 500000,
+speed: "5K/day",
+description: "Real Facebook Shares"
+},
+
+{
+name: "Facebook Comments",
+price: 100,
+min: 10,
+max: 50000,
+speed: "2K/day",
+description: "Custom Facebook Comments"
+},
+
+{
+name: "FB Page Followers",
+price: 130,
+min: 100,
+max: 100000,
+speed: "50K/day",
+description: "High Quality Followers"
+}
+
+],
+
+instagram: [
+
+{
+name: "Instagram Followers",
+price: 203,
+min: 100,
+max: 100000,
+speed: "20K/day",
+description: "HQ Instagram Followers"
+},
+
+{
+name: "Instagram Likes",
+price: 40,
+min: 100,
+max: 500000,
+speed: "50K/day",
+description: "Fast Instagram Likes"
+},
+
+{
+name: "Instagram Reel Views",
+price: 25,
+min: 100,
+max: 1000000,
+speed: "Instant",
+description: "Instant Reel Views"
+},
+
+{
+name: "Instagram Reel Shares",
+price: 10,
+min: 100,
+max: 300000,
+speed: "5K/day",
+description: "Instagram Reel Shares"
+},
+
+{
+name: "Instagram Video Views",
+price: 22,
+min: 100,
+max: 3000000,
+speed: "Instant",
+description: "High Quality IG Video Views"
+},
+
+{
+name: "Instagram Comments",
+price: 299,
+min: 20,
+max: 50000,
+speed: "1K/day",
+description: "Custom Instagram Comments"
+}
+
+],
+
+tiktok: [
+
+{
+name: "TikTok Views",
+price: 57,
+min: 200,
+max: 1000000,
+speed: "Instant",
+description: "Fast TikTok Views"
+},
+
+{
+name: "TikTok Followers",
+price: 726,
+min: 100,
+max: 100000,
+speed: "10K/day",
+description: "Real TikTok Followers"
+},
+
+{
+name: "TikTok Likes",
+price: 40,
+min: 100,
+max: 500000,
+speed: "Instant",
+description: "Fast TikTok Likes"
+},
+
+{
+name: "TikTok Shares",
+price: 5,
+min: 100,
+max: 300000,
+speed: "5K/day",
+description: "TikTok Video Shares"
+}
+
+],
+
+youtube: [
+
+{
+name: "YouTube Views",
+price: 444,
+min: 1000,
+max: 1000000,
+speed: "20K/day",
+description: "YouTube Video Views"
+},
+
+{
+name: "YouTube Subscribers",
+price: 2000,
+min: 100,
+max: 100000,
+speed: "5K/day",
+description: "Real Subscribers"
+},
+
+{
+name: "YouTube Likes",
+price: 451,
+min: 100,
+max: 500000,
+speed: "10K/day",
+description: "Real YouTube Likes"
+},
+
+{
+name: "YouTube Watch Hours",
+price: 5000,
+min: 100,
+max: 10000,
+speed: "500/day",
+description: "Monetization Watch Hours"
+}
+
+],
+
+twitter: [
+
+{
+name: "Twitter Followers",
+price: 3500,
+min: 100,
+max: 100000,
+speed: "5K/day",
+description: "Real Twitter Followers"
+},
+
+{
+name: "Twitter Likes",
+price: 370,
+min: 100,
+max: 500000,
+speed: "Instant",
+description: "Fast Twitter Likes"
+},
+
+{
+name: "Twitter Retweets",
+price: 390,
+min: 100,
+max: 300000,
+speed: "5K/day",
+description: "Fast Twitter Retweets"
+},
+
+{
+name: "Twitter Views",
+price: 7,
+min: 1000,
+max: 5000000,
+speed: "Instant",
+description: "Twitter/X Post Views"
+}
+
+]
+,
+
+telegram: [
+{name:"Telegram Channel Followers",price:120,min:100,max:100000,speed:"10K/day",description:"Real Telegram Followers"},
+{name:"Telegram Emoji Reactions",price:35,min:100,max:500000,speed:"Instant",description:"Telegram Emoji Reactions"},
+{name:"Telegram Poll Votes",price:55,min:100,max:100000,speed:"Fast",description:"Telegram Poll Votes"}
+],
+
+whatsapp: [
+{name:"WhatsApp Channel Followers",price:250,min:100,max:100000,speed:"5K/day",description:"WhatsApp Followers"},
+{name:"WhatsApp Emoji Reactions",price:60,min:100,max:500000,speed:"Instant",description:"WhatsApp Emoji Reactions"}
+],
+
+linkedin: [
+{name:"LinkedIn Followers",price:600,min:100,max:50000,speed:"2K/day",description:"Professional LinkedIn Followers"},
+{name:"LinkedIn Likes",price:200,min:100,max:100000,speed:"Fast",description:"LinkedIn Post Likes"}
+],
+
+discord: [
+{name:"Discord Members",price:450,min:100,max:100000,speed:"5K/day",description:"Real Discord Members"},
+{name:"Discord Reactions",price:80,min:100,max:100000,speed:"Instant",description:"Discord Emoji Reactions"}
+],
+
+soundcloud: [
+{name:"SoundCloud Plays",price:90,min:100,max:1000000,speed:"Instant",description:"High Quality SoundCloud Plays"},
+{name:"SoundCloud Followers",price:300,min:100,max:100000,speed:"Fast",description:"Real SoundCloud Followers"}
+],
+
+threads: [
+{name:"Threads Followers",price:320,min:100,max:100000,speed:"5K/day",description:"Threads Followers"},
+{name:"Threads Likes",price:70,min:100,max:500000,speed:"Instant",description:"Threads Likes"}
+],
+
+website: [
+{name:"Website Traffic",price:150,min:1000,max:5000000,speed:"Instant",description:"Worldwide Website Traffic"},
+{name:"Kenya Website Traffic",price:350,min:1000,max:1000000,speed:"Fast",description:"Kenyan Website Promotion"}
+]
+
+
+};
+
+
+// ====================================
+// ELEMENTS
+// ====================================
+
+const category = document.getElementById("category");
+const service = document.getElementById("service");
+const description = document.getElementById("description");
+const quantity = document.getElementById("quantity");
+const charge = document.getElementById("charge");
+
+// ====================================
+// LOAD SERVICES
+// ====================================
+
+function loadServices(){
+
+let selectedCategory = category.value;
+
+service.innerHTML =
+'<option value="">Select Service</option>';
+
+description.innerHTML =
+'Service description will appear here';
+
+charge.value = '';
+
+if(!services[selectedCategory]) return;
+
+services[selectedCategory].forEach((item,index)=>{
+
+service.innerHTML += `
+<option value="${index}">
+${item.name} - ${item.price} KSh / 1000
+</option>
+`;
+
+});
+
+}
+
+// ====================================
+// SHOW SERVICE DETAILS
+// ====================================
+
+function showDetails(){
+
+let selectedCategory = category.value;
+
+let selectedIndex = service.value;
+
+if(selectedCategory === "") return;
+
+if(selectedIndex === "") return;
+
+let selectedService =
+services[selectedCategory][selectedIndex];
+
+if(!selectedService) return;
+
+description.innerHTML = `
+
+<b>Service:</b> ${selectedService.name}<br>
+<b>Price:</b> ${selectedService.price} KSh per 1000<br>
+<b>Min:</b> ${selectedService.min}<br>
+<b>Max:</b> ${selectedService.max}<br>
+<b>Speed:</b> ${selectedService.speed}<br>
+<b>Description:</b> ${selectedService.description}
+
+`;
+
+calculateCharge();
+
+}
+
+// ====================================
+// CALCULATE CHARGE
+// ====================================
+
+function calculateCharge(){
+
+let selectedCategory = category.value;
+
+let selectedIndex = service.value;
+
+if(selectedCategory === "") return;
+
+if(selectedIndex === "") return;
+
+let selectedService =
+services[selectedCategory][selectedIndex];
+
+if(!selectedService) return;
+
+let qty = Number(quantity.value);
+
+if(qty < selectedService.min){
+
+charge.value = "Below Minimum";
+return;
+
+}
+
+if(qty > selectedService.max){
+
+charge.value = "Above Maximum";
+return;
+
+}
+
+let total =
+(qty / 1000)
+* selectedService.price;
+
+charge.value =
+total.toFixed(2) + " KSh";
+
+}
+
+
+
+console.log("Services Loaded:", services);
+
+// ====================================
+// WALLET SYSTEM
+// ====================================
+
+let balance = 0;
+
+async function loadUserBalance(){
+
+const email =
+localStorage.getItem("userEmail");
+
+if(!email) return;
+
+const snapshot = await getDocs(
+collection(db,"users")
+);
+
+snapshot.forEach((doc)=>{
+
+const data = doc.data();
+
+if(data.email === email){
+
+balance = data.balance || 0;
+
+updateWalletUI();
+
+}
+
+});
+
+}
+let totalDeposited = 0;
+let totalUsed = 0;
+
+function updateWalletUI(){
+
+document.getElementById("balanceBtn").innerHTML =
+"Balance: KSh " + balance.toFixed(2);
+
+document.getElementById("totalDeposited").innerHTML =
+"KSh " + totalDeposited.toFixed(2);
+
+document.getElementById("totalUsed").innerHTML =
+"KSh " + totalUsed.toFixed(2);
+
+document.getElementById("remainingBalance").innerHTML =
+"KSh " + balance.toFixed(2);
+
+}
+
+async function depositNow(){
+
+const amount =
+document.getElementById("depositAmount").value;
+
+if(amount < 25){
+
+alert("Minimum deposit is KSh 25");
+return;
+
+}
+
+const email =
+localStorage.getItem("userEmail");
+
+if(!email){
+
+alert("Please login first");
+return;
+
+}
+
+try{
+
+const response = await fetch(
+"https://bbk-daraja-backend.onrender.com//create-order",
+{
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body: JSON.stringify({
+amount,
+email
+})
+
+}
+);
+
+const data = await response.json();
+
+if(data.redirect_url){
+
+window.location.href =
+data.redirect_url;
+
+}else{
+
+alert("Unable to start payment");
+
+console.log(data);
+
+}
+
+}catch(error){
+
+console.error("Deposit Error:", error);
+
+alert("Payment Error");
+
+}
+
+}
+async function submitDeposit(){
+
+const amount =
+document.getElementById("depositAmount").value;
+
+if(amount < 25){
+alert("Enter valid amount");
+return;
+}
+
+const email =
+localStorage.getItem("userEmail") || "Unknown User";
+
+document.getElementById("depositStatus").innerHTML =
+"⏳ Deposit Pending Verification";
+
+try{
+
+await window.addDoc(
+window.collection(window.db, "deposits"),
+{
+
+email: email,
+amount: Number(amount),
+status: "pending",
+createdAt: new Date()
+
+});
+
+alert(
+"Deposit submitted successfully!\n\nKSh "
++ amount +
+" waiting for approval."
+);
+
+document.getElementById("depositAmount").value = "";
+
+}catch(error){
+console.log(error);
+alert("Error submitting deposit");
+}
+
+}
+
+// ====================================
+// MANUAL BBK DEPOSIT SYSTEM
+// ====================================
+
+
+
+
+// ====================================
+// SUBMIT ORDER
+// ====================================
+
+async function submitOrder(){
+
+let selectedCategory = category.value;
+
+let selectedIndex = service.value;
+
+const link =
+document.getElementById("orderLink").value;
+
+// CHECK CATEGORY
+
+if(selectedCategory === ""){
+
+alert("Select category");
+return;
+
+}
+
+// CHECK SERVICE
+
+if(selectedIndex === ""){
+
+alert("Select service");
+return;
+
+}
+
+// CHECK LINK
+
+if(link === ""){
+
+alert("Please enter link");
+return;
+
+}
+
+// CHECK URL
+
+if(!link.includes("http")){
+
+alert("Enter valid social media link");
+return;
+
+}
+
+// INSTAGRAM
+
+if(
+selectedCategory === "instagram" &&
+!link.includes("instagram.com")
+){
+
+alert("Enter valid Instagram link");
+return;
+
+}
+
+// FACEBOOK
+
+if(
+selectedCategory === "facebook" &&
+!link.includes("facebook.com")
+){
+
+alert("Enter valid Facebook link");
+return;
+
+}
+
+// TIKTOK
+
+if(
+selectedCategory === "tiktok" &&
+!link.includes("tiktok.com")
+){
+
+alert("Enter valid TikTok link");
+return;
+
+}
+
+// YOUTUBE
+
+if(
+selectedCategory === "youtube" &&
+!(
+link.includes("youtube.com") ||
+link.includes("youtu.be")
+)
+){
+
+alert("Enter valid YouTube link");
+return;
+
+}
+
+// TWITTER / X
+
+if(
+selectedCategory === "twitter" &&
+!(
+link.includes("twitter.com") ||
+link.includes("x.com")
+)
+){
+
+alert("Enter valid Twitter/X link");
+return;
+
+}
+
+// TELEGRAM
+
+if(
+selectedCategory === "telegram" &&
+!link.includes("t.me")
+){
+
+alert("Enter valid Telegram link");
+return;
+
+}
+
+// WHATSAPP
+
+if(
+selectedCategory === "whatsapp" &&
+!link.includes("whatsapp")
+){
+
+alert("Enter valid WhatsApp link");
+return;
+
+}
+
+// LINKEDIN
+
+if(
+selectedCategory === "linkedin" &&
+!link.includes("linkedin.com")
+){
+
+alert("Enter valid LinkedIn link");
+return;
+
+}
+
+// DISCORD
+
+if(
+selectedCategory === "discord" &&
+!link.includes("discord")
+){
+
+alert("Enter valid Discord link");
+return;
+
+}
+
+// SOUNDCLOUD
+
+if(
+selectedCategory === "soundcloud" &&
+!link.includes("soundcloud.com")
+){
+
+alert("Enter valid SoundCloud link");
+return;
+
+}
+
+// THREADS
+
+if(
+selectedCategory === "threads" &&
+!link.includes("threads.net")
+){
+
+alert("Enter valid Threads link");
+return;
+
+}
+
+// GET SERVICE
+
+let selectedService =
+services[selectedCategory][selectedIndex];
+
+let qty = Number(quantity.value);
+
+// CHECK MIN
+
+if(qty < selectedService.min){
+
+alert(
+"Minimum quantity is " +
+selectedService.min
+);
+
+return;
+
+}
+
+// CHECK MAX
+
+if(qty > selectedService.max){
+
+alert(
+"Maximum quantity is " +
+selectedService.max
+);
+
+return;
+
+}
+
+// CALCULATE TOTAL
+
+let total =
+(qty / 1000) * selectedService.price;
+
+// CHECK BALANCE
+
+if(balance < total){
+
+alert("Insufficient Balance");
+return;
+
+}
+
+// DEDUCT BALANCE
+
+balance -= total;
+
+totalUsed += total;
+
+totalDeposited =
+balance + totalUsed;
+
+// UPDATE UI
+
+updateWalletUI();
+
+// SAVE ORDER
+
+const email =
+localStorage.getItem("userEmail");
+
+try{
+
+await addDoc(
+collection(db,"orders"),
+{
+
+userEmail: email,
+service: selectedService.name,
+category: selectedCategory,
+link: link,
+quantity: qty,
+cost: total.toFixed(2),
+status: "Pending",
+counts: "0/" + qty,
+date: new Date().toLocaleString()
+
+}
+);
+
+// UPDATE USER BALANCE
+
+const snapshot =
+await getDocs(collection(db,"users"));
+
+snapshot.forEach(async(userDoc)=>{
+
+const data = userDoc.data();
+
+if(data.email === email){
+
+await updateDoc(
+doc(db,"users",userDoc.id),
+{
+
+balance: balance,
+totalUsed: totalUsed,
+totalDeposited: totalDeposited
+
+}
+);
+
+}
+
+});
+
+// SUCCESS
+
+alert(
+"✅ Order Successful!\n\n"
++
+selectedService.name
++
+"\nCharge: KSh "
++
+total.toFixed(2)
++
+"\nRemaining Balance: KSh "
++
+balance.toFixed(2)
+);
+
+// CLEAR FORM
+
+document.getElementById("orderLink").value = "";
+
+quantity.value = 1000;
+
+calculateCharge();
+
+}catch(error){
+
+console.log(error);
+
+alert("Failed to submit order");
+
+}
+
+}
+
+
+
+
+
+
+// CLOSE MENU WHEN CLICKING OUTSIDE
+document.addEventListener("click", function(event){
+
+const sidebar = document.getElementById("sidebarMenu");
+const toggle = document.querySelector(".menu-toggle");
+
+if(
+sidebar.classList.contains("active") &&
+!sidebar.contains(event.target) &&
+!toggle.contains(event.target)
+){
+sidebar.classList.remove("active");
+}
+
+});
+
+
+
+function selectCategory(appName){
+
+category.value = appName;
+
+loadServices();
+
+}
+
+
+// MOBILE MENU
+function toggleMenu(){
+document.getElementById("sidebarMenu").classList.toggle("active");
+}
+
+
+// ====================================
+// EVENTS
+// ====================================
+
+category.addEventListener(
+"change",
+loadServices
+);
+
+service.addEventListener(
+"change",
+showDetails
+);
+
+quantity.addEventListener(
+"input",
+calculateCharge
+);
+
+</script>
+<script>
+				function tutor_prevent_copy(event) {
+					const nodeName = event.target?.nodeName
+					if (! ['INPUT', 'TEXTAREA'].includes(nodeName) ) {
+						event.preventDefault();
+					}
+				}
+
+				document.addEventListener('contextmenu', tutor_prevent_copy );
+				document.addEventListener('copy', tutor_prevent_copy );
+			</script>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import {
+getFirestore,
+addDoc,
+collection,
+getDocs,
+updateDoc,
+doc
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDrhTzOuaX4uEqSACsxbhOacbKoMPQ0YjQ",
+  authDomain: "boostyabankkenya.firebaseapp.com",
+  projectId: "boostyabankkenya",
+  storageBucket: "boostyabankkenya.firebasestorage.app",
+  messagingSenderId: "291213526262",
+  appId: "1:291213526262:web:0d55d9f43025e9d95b98d7",
+  measurementId: "G-P6EXRP3L72",
+  };
+
+  const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+window.db = db;
+window.collection = collection;
+window.addDoc = addDoc;
+window.getDocs = getDocs;
+window.updateDoc = updateDoc;
+window.doc = doc;
+window.db = db;
+window.addDoc = addDoc;
+window.collection = collection;
+
+  window.sendMessage = async function(name, email, message){
+    await addDoc(collection(db, "messages"), {
+      name,
+      email,
+      message,
+      time: new Date()
+    });
+    alert("Message sent!");
+  }
+
+loadUserBalance();
+setInterval(() => {
+loadUserBalance();
+}, 5000);
+window.loadUserBalance = loadUserBalance;
+window.submitDeposit = submitDeposit;
+</script>
+
+<!-- BOTTOM NAVIGATION -->
+
+<div class="bottom-nav">
+
+<a href="affiliates.html">
+<i class="fa-solid fa-gift"></i>
+<span>Refer & Earn</span>
+</a>
+
+<a href="dashboard.html">
+<i class="fa-solid fa-cart-plus"></i>
+<span>New Order</span>
+</a>
+
+<a href="addfunds.html">
+<i class="fa-solid fa-wallet"></i>
+<span>Add Funds</span>
+</a>
+
+<a href="myorders.html">
+<i class="fa-solid fa-box"></i>
+<span>My Orders</span>
+</a>
+
+<a href="#">
+<i class="fa-solid fa-headset"></i>
+<span>Support Team</span>
+</a>
+
+</div>
+
+
+<script>
+    let qty = document.getElementById("quantity").value;
+    let error = document.getElementById("error");
+
+    if (qty === "" || qty <= 0) {
+        e.preventDefault();
+        error.textContent = "Please enter a valid quantity before submitting.";
+    } else {
+        error.textContent = "";
+    }
+});
+</script>
+</body>
+</html>
