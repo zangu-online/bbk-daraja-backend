@@ -1,11 +1,9 @@
 const admin = require("firebase-admin");
 
+const serviceAccount = require("./serviceAccountKey.json");
+
 admin.initializeApp({
-  credential: admin.credential.cert({
-    projectId: process.env.boostyabankkenya,
-    clientEmail: process.env.firebase-adminsdk-fbsvc@boostyabankkenya.iam.gserviceaccount.com,
-    privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, "\n")
-  })
+  credential: admin.credential.cert(serviceAccount)
 });
 
 const db = admin.firestore();
