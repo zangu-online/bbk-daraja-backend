@@ -157,9 +157,9 @@ app.get("/register-urls", async (req, res) => {
         ShortCode: "600000",
         ResponseType: "Completed",
         ConfirmationURL:
-          "https://sauciness-strangle-commotion.ngrok-free.dev/confirmation",
+          "https://bbk-daraja-backend.onrender.com/confirmation",
         ValidationURL:
-          "https://sauciness-strangle-commotion.ngrok-free.dev/validation"
+          "https://bbk-daraja-backend.onrender.com/validation"
       },
       {
         headers: {
